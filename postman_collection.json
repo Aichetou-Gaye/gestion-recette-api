@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "e1900e96-79d1-4a31-a602-1c8627b62945",
+		"name": "API-Recipes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38098502"
+	},
+	"item": [
+		{
+			"name": "GET-RECIPES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/recipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST-RECIPES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titre\": \"Lasagne\",\r\n    \"ingredients\" : \"feuille de lasagne, viandes, tomates, huile, épices\",\r\n    \"type\": \"Plat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/recipes",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-RECIPES",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titre\": \"Pate à la viande\",\r\n    \"ingredients\" : \"pates, viandes, épices, fromage\",\r\n    \"type\": \"Plat\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/recipes/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"recipes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-RECIPES",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3003/recipes/8",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"recipes",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
