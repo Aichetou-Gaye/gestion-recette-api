@@ -52,7 +52,7 @@ class RecipeController {
       const ingredients = req.body.ingredients;
       const type = req.body.type;
       await Recipe.editRecipe(id, titre, ingredients, type);
-      res.json('Updted successfully');
+      res.json('Updated successfully');
     } catch (error) {
       console.log(error.message);
     }
