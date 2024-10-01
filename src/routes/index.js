@@ -4,6 +4,7 @@ import {
   addRequestValidator,
   deleteRequestValidator,
   updateRequestValidator,
+  getRequestValidator,
 } from '../validators/RecetteValidator.js';
 
 const router = express.Router();
@@ -24,6 +25,6 @@ router.put(
   RecipeController.updateRecipe
 );
 
-router.get('/recipes/:id', deleteRequestValidator, RecipeController.getByID);
+router.get('/recipes/:id', getRequestValidator, RecipeController.getByID);
 
 export default router;
