@@ -35,7 +35,7 @@ Ce projet consiste à mettre en place un API qui permettra de gérer la créatio
 
 - Renommez le fichier [.env.sample](.env.sample) à "**.env**"
 
-- Remplacez les valeurs manquants par vos informations de connexion à MySQL dans le fichier "**.env**"
+- Remplacez vos informations de connexion à MySQL dans le fichier "**.env**"
 
 - Pour démarrer le projet:
 
@@ -142,7 +142,7 @@ npm run format
 
 ## Docker
 
-- Renommez le fichier [.env.test.sample](.env.test.sample) à "**.env.test**" et remplacez les valeurs manquants par vos informations de connexion à MySQL
+- Renommez le fichier [.env.test.sample](.env.test.sample) à "**.env.test**" et remplacez par vos informations de connexion à MySQL
 
 - Builder l'image docker
 
