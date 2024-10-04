@@ -10,6 +10,9 @@ const addRequestValidator = [
     .isLength({ min: 5 })
     .withMessage('Minimum 5 caractères requis!')
     .bail()
+    .isLength({ max: 100 })
+    .withMessage('Maximum 100 caractères limite!')
+    .bail()
     .custom(async (value) => {
       const result = await Recipe.checkRecipe(value);
       if (result !== 0) {
@@ -23,6 +26,9 @@ const addRequestValidator = [
     .bail()
     .isLength({ min: 10 })
     .withMessage('Minimum 10 caractères requis!')
+    .bail()
+    .isLength({ max: 500 })
+    .withMessage('Maximum 500 caractères limite!')
     .bail(),
   check('type')
     .notEmpty()
@@ -105,6 +111,9 @@ const updateRequestValidator = [
     .isLength({ min: 5 })
     .withMessage('Minimum 5 caractères requis!')
     .bail()
+    .isLength({ max: 100 })
+    .withMessage('Maximum 100 caractères limite!')
+    .bail()
     .custom(async (value) => {
       const result = await Recipe.checkRecipe(value);
       if (result !== 0) {
@@ -118,6 +127,9 @@ const updateRequestValidator = [
     .bail()
     .isLength({ min: 10 })
     .withMessage('Minimum 10 caractères requis!')
+    .bail()
+    .isLength({ max: 500 })
+    .withMessage('Maximum 500 caractères limite!')
     .bail(),
   check('type')
     .notEmpty()
